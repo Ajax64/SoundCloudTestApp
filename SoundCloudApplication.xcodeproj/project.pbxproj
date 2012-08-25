@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD8F55915E915990037937C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F55815E915990037937C /* UIKit.framework */; };
+		EBD8F55B15E915990037937C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F55A15E915990037937C /* Foundation.framework */; };
+		EBD8F55D15E915990037937C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F55C15E915990037937C /* CoreGraphics.framework */; };
+		EBD8F56315E915990037937C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBD8F56115E915990037937C /* InfoPlist.strings */; };
+		EBD8F56515E915990037937C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F56415E915990037937C /* main.m */; };
+		EBD8F56915E915990037937C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F56815E915990037937C /* AppDelegate.m */; };
+		EBD8F57115E915990037937C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F57015E915990037937C /* SenTestingKit.framework */; };
+		EBD8F57215E915990037937C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F55815E915990037937C /* UIKit.framework */; };
+		EBD8F57315E915990037937C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD8F55A15E915990037937C /* Foundation.framework */; };
+		EBD8F57B15E915990037937C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBD8F57915E915990037937C /* InfoPlist.strings */; };
+		EBD8F57E15E915990037937C /* SoundCloudApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F57D15E915990037937C /* SoundCloudApplicationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBD8F57415E915990037937C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD8F54B15E915990037937C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD8F55315E915990037937C;
+			remoteInfo = SoundCloudApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBD8F55415E915990037937C /* SoundCloudApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD8F55815E915990037937C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EBD8F55A15E915990037937C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBD8F55C15E915990037937C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBD8F56015E915990037937C /* SoundCloudApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudApplication-Info.plist"; sourceTree = "<group>"; };
+		EBD8F56215E915990037937C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBD8F56415E915990037937C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBD8F56615E915990037937C /* SoundCloudApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundCloudApplication-Prefix.pch"; sourceTree = "<group>"; };
+		EBD8F56715E915990037937C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBD8F56815E915990037937C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBD8F56F15E915990037937C /* SoundCloudApplicationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloudApplicationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD8F57015E915990037937C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EBD8F57815E915990037937C /* SoundCloudApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudApplicationTests-Info.plist"; sourceTree = "<group>"; };
+		EBD8F57A15E915990037937C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBD8F57C15E915990037937C /* SoundCloudApplicationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundCloudApplicationTests.h; sourceTree = "<group>"; };
+		EBD8F57D15E915990037937C /* SoundCloudApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudApplicationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD8F55115E915990037937C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F55915E915990037937C /* UIKit.framework in Frameworks */,
+				EBD8F55B15E915990037937C /* Foundation.framework in Frameworks */,
+				EBD8F55D15E915990037937C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD8F56B15E915990037937C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F57115E915990037937C /* SenTestingKit.framework in Frameworks */,
+				EBD8F57215E915990037937C /* UIKit.framework in Frameworks */,
+				EBD8F57315E915990037937C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD8F54915E915990037937C = {
+			isa = PBXGroup;
+			children = (
+				EBD8F55E15E915990037937C /* SoundCloudApplication */,
+				EBD8F57615E915990037937C /* SoundCloudApplicationTests */,
+				EBD8F55715E915990037937C /* Frameworks */,
+				EBD8F55515E915990037937C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD8F55515E915990037937C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F55415E915990037937C /* SoundCloudApplication.app */,
+				EBD8F56F15E915990037937C /* SoundCloudApplicationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD8F55715E915990037937C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F55815E915990037937C /* UIKit.framework */,
+				EBD8F55A15E915990037937C /* Foundation.framework */,
+				EBD8F55C15E915990037937C /* CoreGraphics.framework */,
+				EBD8F57015E915990037937C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBD8F55E15E915990037937C /* SoundCloudApplication */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F56715E915990037937C /* AppDelegate.h */,
+				EBD8F56815E915990037937C /* AppDelegate.m */,
+				EBD8F55F15E915990037937C /* Supporting Files */,
+			);
+			path = SoundCloudApplication;
+			sourceTree = "<group>";
+		};
+		EBD8F55F15E915990037937C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F56015E915990037937C /* SoundCloudApplication-Info.plist */,
+				EBD8F56115E915990037937C /* InfoPlist.strings */,
+				EBD8F56415E915990037937C /* main.m */,
+				EBD8F56615E915990037937C /* SoundCloudApplication-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBD8F57615E915990037937C /* SoundCloudApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F57C15E915990037937C /* SoundCloudApplicationTests.h */,
+				EBD8F57D15E915990037937C /* SoundCloudApplicationTests.m */,
+				EBD8F57715E915990037937C /* Supporting Files */,
+			);
+			path = SoundCloudApplicationTests;
+			sourceTree = "<group>";
+		};
+		EBD8F57715E915990037937C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F57815E915990037937C /* SoundCloudApplicationTests-Info.plist */,
+				EBD8F57915E915990037937C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD8F55315E915990037937C /* SoundCloudApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD8F58115E915990037937C /* Build configuration list for PBXNativeTarget "SoundCloudApplication" */;
+			buildPhases = (
+				EBD8F55015E915990037937C /* Sources */,
+				EBD8F55115E915990037937C /* Frameworks */,
+				EBD8F55215E915990037937C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCloudApplication;
+			productName = SoundCloudApplication;
+			productReference = EBD8F55415E915990037937C /* SoundCloudApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBD8F56E15E915990037937C /* SoundCloudApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD8F58415E915990037937C /* Build configuration list for PBXNativeTarget "SoundCloudApplicationTests" */;
+			buildPhases = (
+				EBD8F56A15E915990037937C /* Sources */,
+				EBD8F56B15E915990037937C /* Frameworks */,
+				EBD8F56C15E915990037937C /* Resources */,
+				EBD8F56D15E915990037937C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD8F57515E915990037937C /* PBXTargetDependency */,
+			);
+			name = SoundCloudApplicationTests;
+			productName = SoundCloudApplicationTests;
+			productReference = EBD8F56F15E915990037937C /* SoundCloudApplicationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD8F54B15E915990037937C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Alexander Ney";
+			};
+			buildConfigurationList = EBD8F54E15E915990037937C /* Build configuration list for PBXProject "SoundCloudApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EBD8F54915E915990037937C;
+			productRefGroup = EBD8F55515E915990037937C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD8F55315E915990037937C /* SoundCloudApplication */,
+				EBD8F56E15E915990037937C /* SoundCloudApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD8F55215E915990037937C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F56315E915990037937C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD8F56C15E915990037937C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F57B15E915990037937C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBD8F56D15E915990037937C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD8F55015E915990037937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F56515E915990037937C /* main.m in Sources */,
+				EBD8F56915E915990037937C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD8F56A15E915990037937C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD8F57E15E915990037937C /* SoundCloudApplicationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBD8F57515E915990037937C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD8F55315E915990037937C /* SoundCloudApplication */;
+			targetProxy = EBD8F57415E915990037937C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBD8F56115E915990037937C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD8F56215E915990037937C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EBD8F57915E915990037937C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD8F57A15E915990037937C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD8F57F15E915990037937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBD8F58015E915990037937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD8F58215E915990037937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudApplication/SoundCloudApplication-Prefix.pch";
+				INFOPLIST_FILE = "SoundCloudApplication/SoundCloudApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EBD8F58315E915990037937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudApplication/SoundCloudApplication-Prefix.pch";
+				INFOPLIST_FILE = "SoundCloudApplication/SoundCloudApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EBD8F58515E915990037937C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoundCloudApplication.app/SoundCloudApplication";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudApplication/SoundCloudApplication-Prefix.pch";
+				INFOPLIST_FILE = "SoundCloudApplicationTests/SoundCloudApplicationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EBD8F58615E915990037937C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoundCloudApplication.app/SoundCloudApplication";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCloudApplication/SoundCloudApplication-Prefix.pch";
+				INFOPLIST_FILE = "SoundCloudApplicationTests/SoundCloudApplicationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD8F54E15E915990037937C /* Build configuration list for PBXProject "SoundCloudApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD8F57F15E915990037937C /* Debug */,
+				EBD8F58015E915990037937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD8F58115E915990037937C /* Build configuration list for PBXNativeTarget "SoundCloudApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD8F58215E915990037937C /* Debug */,
+				EBD8F58315E915990037937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBD8F58415E915990037937C /* Build configuration list for PBXNativeTarget "SoundCloudApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD8F58515E915990037937C /* Debug */,
+				EBD8F58615E915990037937C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD8F54B15E915990037937C /* Project object */;
+}
