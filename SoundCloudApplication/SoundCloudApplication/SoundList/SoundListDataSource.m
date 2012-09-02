@@ -51,7 +51,7 @@
         trackCell.titleLable.text = _elements[indexPath.row][@"title"];
         
         NSURL* titleImageURL = nil;
-        NSLog(@"%@", _elements[indexPath.row]);
+        
         if (_elements[indexPath.row][@"artwork_url"] != [NSNull null]) {
             titleImageURL =  [NSURL URLWithString:_elements[indexPath.row][@"artwork_url"]];
         } else if (_elements[indexPath.row][@"user"][@"avatar_url"] != [NSNull null]) {
