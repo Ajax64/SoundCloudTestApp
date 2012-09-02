@@ -10,7 +10,6 @@
 #import "CommentCell.h"
 
 @interface SoundDetailViewController ()
-- (void) repeatRequest;
 @end
 
 @implementation SoundDetailViewController
