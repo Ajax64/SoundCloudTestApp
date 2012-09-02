@@ -17,6 +17,8 @@
 		456A06CF15EE153F00EB7321 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 456A06C315EE153F00EB7321 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		456A06D015EE153F00EB7321 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 456A06C515EE153F00EB7321 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		456A06D115EE153F00EB7321 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 456A06C715EE153F00EB7321 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB0C736215F3F3B900A40A01 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0C736115F3F3B900A40A01 /* appicon@2x.png */; };
+		EB0C736415F3F3C000A40A01 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0C736315F3F3C000A40A01 /* appicon.png */; };
 		EB0F965515F37FD70037EB9F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB0F965415F37FD70037EB9F /* Localizable.strings */; };
 		EB0F965915F38F160037EB9F /* logout_button.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F965715F38F160037EB9F /* logout_button.png */; };
 		EB0F965A15F38F160037EB9F /* logout_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F965815F38F160037EB9F /* logout_button@2x.png */; };
@@ -109,6 +111,8 @@
 		456A06C515EE153F00EB7321 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		456A06C615EE153F00EB7321 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		456A06C715EE153F00EB7321 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		EB0C736115F3F3B900A40A01 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		EB0C736315F3F3C000A40A01 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		EB0F965415F37FD70037EB9F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EB0F965715F38F160037EB9F /* logout_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_button.png; sourceTree = "<group>"; };
 		EB0F965815F38F160037EB9F /* logout_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout_button@2x.png"; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 		EBE9FDA415E9342200FD5E6A = {
 			isa = PBXGroup;
 			children = (
+				EB0C736315F3F3C000A40A01 /* appicon.png */,
+				EB0C736115F3F3B900A40A01 /* appicon@2x.png */,
 				EB6FD35815F0190400461A37 /* Resources */,
 				EBE9FDB915E9342200FD5E6A /* SoundCloudapplication */,
 				EBE9FDDA15E9342200FD5E6A /* SoundCloudapplicationTests */,
@@ -545,6 +551,8 @@
 				EB0F965915F38F160037EB9F /* logout_button.png in Resources */,
 				EB0F965A15F38F160037EB9F /* logout_button@2x.png in Resources */,
 				EBFF034415F3E8330046DC80 /* SoundCloud.bundle in Resources */,
+				EB0C736215F3F3B900A40A01 /* appicon@2x.png in Resources */,
+				EB0C736415F3F3C000A40A01 /* appicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,14 +731,14 @@
 					"${SRCROOT}/**",
 				);
 				INFOPLIST_FILE = "SoundCloudapplication/SoundCloudapplication-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "A8986658-A15F-4275-A986-B75E6B521409";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -746,14 +754,14 @@
 					"${SRCROOT}/**",
 				);
 				INFOPLIST_FILE = "SoundCloudapplication/SoundCloudapplication-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "A8986658-A15F-4275-A986-B75E6B521409";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
