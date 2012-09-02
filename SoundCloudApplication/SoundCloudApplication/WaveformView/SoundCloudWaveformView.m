@@ -68,9 +68,10 @@ static NSCache *_imageCache;
  */
 -(void) setImage:(UIImage *)image
 {
+    
     _imageView.image = image;
     _imageView.alpha = 0;
- 
+
     if (self.isHorizontal) {
         _imageView.frame = CGRectMake(_imageView.frame.origin.x, self.frame.size.height, _imageView.frame.size.width, 0);
         
@@ -115,9 +116,10 @@ static NSCache *_imageCache;
     
     UIImage *cachedImage = [_imageCache objectForKey:imageName];
     if(cachedImage) { //if image was chaced - set it
-        [self performSelectorOnMainThread:@selector(setImage:) withObject:cachedImage waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(setImage:) withObject:cachedImage waitUntilDone:NO];
         return;
     }
+    
     //image was not cahced...
     
     //set acitivityindicator in the statusbar
@@ -148,19 +150,21 @@ static NSCache *_imageCache;
     CGImageRef imageSourceMask = CGImageCreateWithImageInRect(cgWaveFormImageCorrected, CGRectMake(0, 0, CGImageGetWidth(cgWaveFormImageCorrected), CGImageGetHeight(cgWaveFormImageCorrected) / (_half?2.0f:1.0f) ));
     
     CGImageRelease(cgWaveFormImageCorrected);
-
+    
     
     //create gradient image
     // Initialise
     UIGraphicsBeginImageContextWithOptions(sourceImage.size, YES, 1);
     
     //Gradient colors
-    CGColorRef startColor = [STARTCOLOR CGColor];
-    CGColorRef endColor = [ENDCOLOR CGColor];
-    
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGFloat locations[2] = {0.0, 1.0};
-    NSArray *colors = @[(__bridge id)startColor, (__bridge id)endColor];
+    
+    UIColor *starColor =  STARTCOLOR;
+    UIColor *endColor = ENDCOLOR;
+    
+    NSArray *colors = [NSArray arrayWithObjects:(id)[starColor CGColor], (id)[endColor CGColor], nil];
+    //NSArray *colors = [NSArray arrayWithObjects:startColor, endColor, nil];
     CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, locations);
     
     CGContextDrawLinearGradient(UIGraphicsGetCurrentContext(), gradient, CGPointMake(0, 0), CGPointMake(CGImageGetWidth(imageSourceMask), 0), 0 );
@@ -190,16 +194,16 @@ static NSCache *_imageCache;
     CGImageRelease(imageSourceMask);
     CGImageRelease(mask);
     CGImageRelease(maskedImageRef);
-    
+
     app.networkActivityIndicatorVisible = NO;
-    
+     
     //cache the image
     [_imageCache setObject:image forKey:imageName];
     
     //_url != waveformURL if during the loading/processing of the image another image was set loading!
     // in this case prevent updating the waveformimage
     if(_url == waveformURL)
-        [self performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:NO];
 }
 
 - (BOOL) isHorizontal
