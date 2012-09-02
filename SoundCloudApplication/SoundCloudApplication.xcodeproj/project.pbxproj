@@ -132,6 +132,7 @@
 		EB6FD36515F0190400461A37 /* titlebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar@2x.png"; sourceTree = "<group>"; };
 		EB6FD36615F0190400461A37 /* trackcell_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackcell_background.png; sourceTree = "<group>"; };
 		EB6FD36715F0190400461A37 /* trackcell_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackcell_background@2x.png"; sourceTree = "<group>"; };
+		EB93D88D15F3F686007F9B4E /* SoundCloudapplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SoundCloudapplication.entitlements; sourceTree = "<group>"; };
 		EB95E4B015EACE2C00AB723C /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
 		EB95E4B115EACE2C00AB723C /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
 		EB95E4B415EACF7000AB723C /* CommentsListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsListDataSource.h; sourceTree = "<group>"; };
@@ -356,6 +357,7 @@
 		EBE9FDB915E9342200FD5E6A /* SoundCloudapplication */ = {
 			isa = PBXGroup;
 			children = (
+				EB93D88D15F3F686007F9B4E /* SoundCloudapplication.entitlements */,
 				456A066E15EE086D00EB7321 /* Externals */,
 				EBE9FE3515EAC33700FD5E6A /* SoundDetail */,
 				EBE9FE2B15EA637800FD5E6A /* WaveformView */,

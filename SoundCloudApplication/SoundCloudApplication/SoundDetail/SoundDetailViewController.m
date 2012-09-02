@@ -138,7 +138,7 @@
 {
     //create url with soundcloud schema
     UIApplication *currentApplication = [UIApplication sharedApplication];
-    NSString *trackURLPath = [NSString stringWithFormat: @"soundcloud:track:%@" , self.trackInfo[@"id"]];
+    NSString *trackURLPath = [NSString stringWithFormat: @"soundcloud:tracks:%@#play" , self.trackInfo[@"id"]];
     NSURL *trackURL = [NSURL URLWithString:trackURLPath];
     
     if ([currentApplication canOpenURL:trackURL]) { //try to open soudncloud app
