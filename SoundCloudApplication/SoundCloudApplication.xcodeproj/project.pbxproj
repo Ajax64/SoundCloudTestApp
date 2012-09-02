@@ -67,7 +67,6 @@
 		EBE9FE0415E934CD00FD5E6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE9FE0315E934CD00FD5E6A /* CoreLocation.framework */; };
 		EBE9FE0815E934E000FD5E6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE9FE0715E934E000FD5E6A /* Security.framework */; };
 		EBE9FE0A15E934E500FD5E6A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE9FE0915E934E500FD5E6A /* CoreText.framework */; };
-		EBE9FE0D15EA35DA00FD5E6A /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBE9FE0C15EA35DA00FD5E6A /* SoundCloud.bundle */; };
 		EBE9FE1915EA3BA500FD5E6A /* SoundListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE1815EA3BA500FD5E6A /* SoundListViewController.m */; };
 		EBE9FE1F15EA40BF00FD5E6A /* NSArray+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE1C15EA40BF00FD5E6A /* NSArray+Subscript.m */; };
 		EBE9FE2015EA40BF00FD5E6A /* NSDictionary+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE1E15EA40BF00FD5E6A /* NSDictionary+Subscript.m */; };
@@ -75,6 +74,7 @@
 		EBE9FE2615EA5B9000FD5E6A /* TrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE2515EA5B9000FD5E6A /* TrackCell.m */; };
 		EBE9FE2E15EA637800FD5E6A /* SoundCloudWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE2D15EA637800FD5E6A /* SoundCloudWaveformView.m */; };
 		EBE9FE3815EAC35200FD5E6A /* SoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE9FE3715EAC35200FD5E6A /* SoundDetailViewController.m */; };
+		EBFF034415F3E8330046DC80 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBFF034315F3E8330046DC80 /* SoundCloud.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,7 +176,6 @@
 		EBE9FE0515E934D100FD5E6A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EBE9FE0715E934E000FD5E6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EBE9FE0915E934E500FD5E6A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		EBE9FE0C15EA35DA00FD5E6A /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = ../../../CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
 		EBE9FE1715EA3BA500FD5E6A /* SoundListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundListViewController.h; sourceTree = "<group>"; };
 		EBE9FE1815EA3BA500FD5E6A /* SoundListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundListViewController.m; sourceTree = "<group>"; };
 		EBE9FE1B15EA40BF00FD5E6A /* NSArray+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Subscript.h"; sourceTree = "<group>"; };
@@ -191,6 +190,7 @@
 		EBE9FE2D15EA637800FD5E6A /* SoundCloudWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudWaveformView.m; sourceTree = "<group>"; };
 		EBE9FE3615EAC35200FD5E6A /* SoundDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDetailViewController.h; sourceTree = "<group>"; };
 		EBE9FE3715EAC35200FD5E6A /* SoundDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundDetailViewController.m; sourceTree = "<group>"; };
+		EBFF034315F3E8330046DC80 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = ../../CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,7 +355,6 @@
 				EBE9FE2B15EA637800FD5E6A /* WaveformView */,
 				EBE9FE1A15EA40BF00FD5E6A /* Extensions */,
 				EBE9FE1615EA3B7A00FD5E6A /* SoundList */,
-				EBE9FE0B15EA35CB00FD5E6A /* Resources */,
 				EBE9FDC215E9342200FD5E6A /* AppDelegate.h */,
 				EBE9FDC315E9342200FD5E6A /* AppDelegate.m */,
 				EBE9FDC515E9342200FD5E6A /* MainStoryboard_iPhone.storyboard */,
@@ -373,6 +372,7 @@
 		EBE9FDBA15E9342200FD5E6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBFF034315F3E8330046DC80 /* SoundCloud.bundle */,
 				EBE9FDBB15E9342200FD5E6A /* SoundCloudapplication-Info.plist */,
 				EBE9FDBC15E9342200FD5E6A /* InfoPlist.strings */,
 				EBE9FDBF15E9342200FD5E6A /* main.m */,
@@ -399,14 +399,6 @@
 				EBE9FDDD15E9342200FD5E6A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBE9FE0B15EA35CB00FD5E6A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EBE9FE0C15EA35DA00FD5E6A /* SoundCloud.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		EBE9FE1615EA3B7A00FD5E6A /* SoundList */ = {
@@ -533,7 +525,6 @@
 				EBE9FDBE15E9342200FD5E6A /* InfoPlist.strings in Resources */,
 				EBE9FDC715E9342200FD5E6A /* MainStoryboard_iPhone.storyboard in Resources */,
 				EBE9FDCA15E9342200FD5E6A /* MainStoryboard_iPad.storyboard in Resources */,
-				EBE9FE0D15EA35DA00FD5E6A /* SoundCloud.bundle in Resources */,
 				EB6FD36815F0190400461A37 /* background.png in Resources */,
 				EB6FD36915F0190400461A37 /* background@2x.png in Resources */,
 				EB6FD36A15F0190400461A37 /* close_button.png in Resources */,
@@ -553,6 +544,7 @@
 				EB0F965515F37FD70037EB9F /* Localizable.strings in Resources */,
 				EB0F965915F38F160037EB9F /* logout_button.png in Resources */,
 				EB0F965A15F38F160037EB9F /* logout_button@2x.png in Resources */,
+				EBFF034415F3E8330046DC80 /* SoundCloud.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
