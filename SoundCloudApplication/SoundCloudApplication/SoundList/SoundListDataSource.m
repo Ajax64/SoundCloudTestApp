@@ -29,76 +29,63 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    // section 1 is just a empty header to avoid the hiding of cells if the userinfo will bes displayed above
-    if(section == 0)
-        return 1;
-    else
-        return [_elements count];
+    return [_elements count];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 2;
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = nil;
-    if (indexPath.section == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"headCell"];
-    } else {
-        TrackCell *trackCell = [tableView dequeueReusableCellWithIdentifier:@"trackCell"];
-        trackCell.titleLable.text = _elements[indexPath.row][@"title"];
-        
-        NSURL* titleImageURL = nil;
-        
-        if (_elements[indexPath.row][@"artwork_url"] != [NSNull null]) {
-            titleImageURL =  [NSURL URLWithString:_elements[indexPath.row][@"artwork_url"]];
-        } else if (_elements[indexPath.row][@"user"][@"avatar_url"] != [NSNull null]) {
-            titleImageURL =  [NSURL URLWithString:_elements[indexPath.row][@"user"][@"avatar_url"]];
-        }
-        if (titleImageURL) {
-            [trackCell.artistImageView  setImageWithURL:titleImageURL placeholderImage:nil];
-        }
-        
-        if (_elements[indexPath.row][@"waveform_url"] != [NSNull null]) {
-            NSString *bigWafeformURLString = _elements[indexPath.row][@"waveform_url"];
-            NSString *smallWaveformURLString = [bigWafeformURLString stringByReplacingOccurrencesOfString:@"_m.png" withString:@"_s.png"];
-            
-            NSURL *wafeformImageURL = [NSURL URLWithString:smallWaveformURLString];
-            [trackCell.waveformView setWaveformURL:wafeformImageURL];
-        }
-        
-        if (_elements[indexPath.row][@"duration"] != [NSNull null]) {
-            NSTimeInterval durationInterval = [(NSString *)_elements[indexPath.row][@"duration"] floatValue] / 1000;
-            
-            NSDate *date = [NSDate dateWithTimeIntervalSince1970:durationInterval];
-            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            if(durationInterval < 60)
-                [dateFormatter setDateFormat:@"ss"];
-            else if(durationInterval > 60)
-                [dateFormatter setDateFormat:@"mm:ss"];
-            else if(durationInterval >= 60 * 60)
-                [dateFormatter setDateFormat:@"HH:mm:ss"];
-            [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
-            trackCell.durationLabel.text = [dateFormatter stringFromDate:date];
-        }
-        
-        if (_elements[indexPath.row][@"created_at"] != [NSNull null]) {
-            NSDateFormatter *dateInputFormatter = [[NSDateFormatter alloc] init];
-            [dateInputFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss ZZZ"];
-            NSDate *creationDate = [dateInputFormatter dateFromString: _elements[indexPath.row][@"created_at"]];
-            
-            NSDateFormatter *dateOutputFormatter = [[NSDateFormatter alloc] init];
-            dateOutputFormatter.dateStyle = NSDateFormatterMediumStyle;
-            dateOutputFormatter.timeStyle = NSDateFormatterNoStyle;
-            trackCell.creationDateLabel.text = [dateOutputFormatter stringFromDate:creationDate];
-            
-        }
-        
-        cell = trackCell;
+    TrackCell *trackCell = [tableView dequeueReusableCellWithIdentifier:@"trackCell"];
+    trackCell.titleLable.text = _elements[indexPath.row][@"title"];
+    
+    NSURL* titleImageURL = nil;
+    
+    if (_elements[indexPath.row][@"artwork_url"] != [NSNull null]) {
+        titleImageURL =  [NSURL URLWithString:_elements[indexPath.row][@"artwork_url"]];
+    } else if (_elements[indexPath.row][@"user"][@"avatar_url"] != [NSNull null]) {
+        titleImageURL =  [NSURL URLWithString:_elements[indexPath.row][@"user"][@"avatar_url"]];
     }
-    return cell;
+    if (titleImageURL) {
+        [trackCell.artistImageView  setImageWithURL:titleImageURL placeholderImage:nil];
+    }
+    
+    if (_elements[indexPath.row][@"waveform_url"] != [NSNull null]) {
+        NSString *bigWafeformURLString = _elements[indexPath.row][@"waveform_url"];
+        NSString *smallWaveformURLString = [bigWafeformURLString stringByReplacingOccurrencesOfString:@"_m.png" withString:@"_s.png"];
+        
+        NSURL *wafeformImageURL = [NSURL URLWithString:smallWaveformURLString];
+        [trackCell.waveformView setWaveformURL:wafeformImageURL];
+    }
+    
+    if (_elements[indexPath.row][@"duration"] != [NSNull null]) {
+        NSTimeInterval durationInterval = [(NSString *)_elements[indexPath.row][@"duration"] floatValue] / 1000;
+        
+        NSDate *date = [NSDate dateWithTimeIntervalSince1970:durationInterval];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        if(durationInterval < 60)
+            [dateFormatter setDateFormat:@"ss"];
+        else if(durationInterval > 60)
+            [dateFormatter setDateFormat:@"mm:ss"];
+        else if(durationInterval >= 60 * 60)
+            [dateFormatter setDateFormat:@"HH:mm:ss"];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+        trackCell.durationLabel.text = [dateFormatter stringFromDate:date];
+    }
+    
+    if (_elements[indexPath.row][@"created_at"] != [NSNull null]) {
+        NSDateFormatter *dateInputFormatter = [[NSDateFormatter alloc] init];
+        [dateInputFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss ZZZ"];
+        NSDate *creationDate = [dateInputFormatter dateFromString: _elements[indexPath.row][@"created_at"]];
+        
+        NSDateFormatter *dateOutputFormatter = [[NSDateFormatter alloc] init];
+        dateOutputFormatter.dateStyle = NSDateFormatterMediumStyle;
+        dateOutputFormatter.timeStyle = NSDateFormatterNoStyle;
+        trackCell.creationDateLabel.text = [dateOutputFormatter stringFromDate:creationDate];
+        
+    }
+    
+    return trackCell;
+
 }
 
 #pragma mark - Requests

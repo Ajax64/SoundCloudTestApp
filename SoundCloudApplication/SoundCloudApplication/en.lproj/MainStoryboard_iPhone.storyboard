@@ -29,18 +29,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="contentInset" minX="0.0" minY="80" maxX="0.0" maxY="0.0"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="80" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="headCell" rowHeight="140" id="H9c-eU-hO7">
-                                        <rect key="frame" x="0.0" y="1" width="320" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="trackCell" rowHeight="100" id="fHx-gL-XcO" customClass="TrackCell">
-                                        <rect key="frame" x="0.0" y="141" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="1" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
@@ -102,7 +95,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" id="d1r-Y1-ZVd" userLabel="titlebar">
-                                <rect key="frame" x="0.0" y="-1" width="320" height="80"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="top" image="titlebar.png" id="yfv-RP-eeO">
@@ -180,6 +173,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <customObject id="3Vd-br-Lmq" customClass="SoundListDataSource"/>
             </objects>
+            <point key="canvasLocation" x="167" y="16"/>
         </scene>
         <!--Sound Detail View Controller-->
         <scene sceneID="2Gk-XP-U3S">
@@ -324,67 +318,6 @@
         <image name="titlebar.png" width="320" height="80"/>
         <image name="trackcell_background.png" width="320" height="100"/>
     </resources>
-    <classes>
-        <class className="CommentCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommentCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="commentLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="userImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="CommentsListDataSource" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommentsListDataSource.h"/>
-        </class>
-        <class className="ConnectionsView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConnectionsView.h"/>
-        </class>
-        <class className="SoundCloudWaveformView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundCloudWaveformView.h"/>
-        </class>
-        <class className="SoundDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="touchDismissButton:"/>
-                <relationship kind="action" name="touchPlayButton:"/>
-                <relationship kind="outlet" name="commentsDataSource" candidateClass="CommentsListDataSource"/>
-                <relationship kind="outlet" name="connectionsView" candidateClass="ConnectionsView"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="trackNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="waveformView" candidateClass="SoundCloudWaveformView"/>
-            </relationships>
-        </class>
-        <class className="SoundListDataSource" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundListDataSource.h"/>
-        </class>
-        <class className="SoundListViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundListViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="touchLoginButton:"/>
-                <relationship kind="action" name="touchLogoutButton:"/>
-                <relationship kind="outlet" name="cloudGlowImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cloudImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="logoutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="soundListDataSource" candidateClass="SoundListDataSource"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="userImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="userInfoContainerView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="userLocationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TrackCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrackCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="artistImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="creationDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="durationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLable" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="waveformView" candidateClass="SoundCloudWaveformView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
