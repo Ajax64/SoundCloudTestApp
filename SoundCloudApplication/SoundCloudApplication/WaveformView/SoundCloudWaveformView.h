@@ -2,7 +2,7 @@
 //  WaveformView.h
 //  SoundCloudapplication
 //
-//  Created by Sony on 26.08.12.
+//  Created by Alexander Ney on 26.08.12.
 //  Copyright (c) 2012 Alexander Ney. All rights reserved.
 //
 // this class will handle the display of a soundwaveform

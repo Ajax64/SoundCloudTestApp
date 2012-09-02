@@ -2,7 +2,7 @@
 //  SCLoginHelper.m
 //  SoundCloudapplication
 //
-//  Created by Sony on 02.09.12.
+//  Created by Alexander Ney on 02.09.12.
 //  Copyright (c) 2012 Alexander Ney. All rights reserved.
 //
 
