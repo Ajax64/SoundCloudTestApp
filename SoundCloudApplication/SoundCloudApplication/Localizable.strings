@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  SoundCloudapplication
+
+  Created by Sony on 02.09.12.
+  Copyright (c) 2012 Alexander Ney. All rights reserved.
+*/
+
+//Error Messagebox
+"kError"    = "Error";
+"kAbbort"   = "Abbort";
+"kRepeat"   = "Repeat";
+
+//login & logout button
+"kLogin"    = "login";
+"kLogout"   = "logout";
