@@ -49,6 +49,8 @@
     
     if (_elements[indexPath.row][@"timestamp"] != [NSNull null]) {
         commentCell.timestamp = [_elements[indexPath.row][@"timestamp"] floatValue]  / 1000;
+    } else {
+        commentCell.timestamp = 0;
     }
    
     return commentCell;
